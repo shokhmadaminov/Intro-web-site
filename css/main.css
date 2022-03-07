@@ -65,6 +65,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     background-color: #e7e7e7;
+    padding: 50px;
     color: var(--text-color);
 }
 
@@ -74,6 +75,7 @@ body {
     max-width: 1152px;
     flex-grow: 1;
     display: flex;
+    align-items: stretch;
     margin-left: auto;
     margin-right: auto;
 }
@@ -121,4 +123,68 @@ body {
     padding: 29px 0;
     text-align: center;
     border-radius: 0px 0px 20px 20px;
+}
+
+
+/* INTRO SECTION STYLES */
+.intro-form {
+    width: 570px;
+    padding: 55px 60px 40px;
+    border-radius: 20px;
+    background-color: #fff;     
+}
+.intro-right__heading {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 64px;
+}
+.intro-right__inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+.intro-right__input {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    padding: 15px 0 14px 0;
+    border: none;
+    border-bottom: 1px solid var(--placecholder-color);
+    color: var(--placecholder-color);
+    outline: none;
+}
+.intro-right__input:not(:last-child) {
+    margin-bottom: 20px;
+}
+.intro-right__input:focus {
+    font-weight: 600;
+    border-color: #000;
+    color: var(--text-color);
+}
+.intro-right__button {
+    --text-color: #fff;
+    width: 100%;
+    background-color: var(--blueviolet);
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.intro-right__text-bottom {
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--placecholder-color);
+    text-align: center;
+}
+.intro-right__text-bottom a {
+    font-weight: 500;
+    color: var(--red);
+    display: inline-block;
 }
